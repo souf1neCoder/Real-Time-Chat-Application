@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg shadow">
     <div class="container">
 
-        <a class="navbar-brand" href="index.php"><span><i class="fab fa-rocketchat"></i> Souf</span>chat</a>
+        <a class="navbar-brand" href="/"><span><i class="fab fa-rocketchat"></i> Souf</span>chat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
