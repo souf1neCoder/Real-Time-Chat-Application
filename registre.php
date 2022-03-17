@@ -39,7 +39,7 @@ include_once "./includes/header.php";
                     <input type="file" class="file" name="image" id="image">
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="submit" class="btn btn-primary btn-register">Sign In</button>
+                    <button type="submit" name="submit" class="btn btn-primary btn-register">Sign Up</button>
                 </div>
             </form>
             <a href="login" class="btn btn-link">Already Have an Account</a>
