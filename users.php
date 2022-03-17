@@ -1,8 +1,9 @@
 <?php
-    $title = "Soufchat | Users";
-    include_once "./includes/header.php";
+ob_start();
+$title = "Soufchat | Users";
+include_once "./includes/header.php";
 if(!isset($_SESSION['user_id'])){
-    header("location:login.php");
+    header("location:login");
 }
 
 include_once "./config/database.php";

@@ -6,7 +6,7 @@ if (isset($_SESSION['user_id'])) {
     $coming = $_POST['incoming_id'];
     $output = "";
     $stmt = $db->prepare("select * from messages
-   left join users on users.user_id = messages.coming
+   left join users on users.user_id = messages.going
    where (going = :going and coming = :coming) or (going = :coming and coming = :going) order by msg_id");
     $stmt->bindParam(":coming", $coming);
     $stmt->bindParam(":going", $going);
@@ -31,5 +31,5 @@ if (isset($_SESSION['user_id'])) {
         echo $output;
     }
 } else {
-    header("../login.php");
+    header("../login");
 }

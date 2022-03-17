@@ -13,5 +13,5 @@ if(isset($_SESSION['user_id'])){
         $stmt->execute() or die();
     }
 }else{
-    header("../login.php");
+    header("../login");
 }
