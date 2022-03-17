@@ -1,8 +1,8 @@
 <?php
 $title = "Soufchat | Chat";
 include_once "./includes/header.php";
-if (!isset($_SESSION['user_id'])) {
-  header("location: login.php");
+if (!isset($_SESSION['user_id']) || !isset($_GET['user_id'])) {
+  header("location: login");
 }
 include_once "./config/database.php";
 $user_id = $_GET['user_id'];
